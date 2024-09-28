@@ -1,0 +1,105 @@
+@import '_variables.css';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: var(--distance-small);
+
+    h1, p, label, button, table{
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+    }
+}
+
+header{
+    background-color: var(--accent-blue);
+    color: white;
+    padding: var(--distance-small);
+
+    h1{
+        text-align: center;
+    }
+}
+
+form{
+    margin: 1em;        
+    display: flex;
+    flex-direction: column;
+    gap: var(--distance-x-small);
+
+    .input_container{
+        display: grid;
+        grid-template-columns: 100px auto;
+    }
+
+    #year{
+        max-width: 300px;
+        justify-self: end;
+    }
+
+    button{
+        width: 50px;
+        background-color: var(--light-grey);
+        border: 1px solid var(--dark-grey);
+        border-radius: 0.3em;
+        padding: var(--distance-x-small);
+        color: var(--accent-blue);
+    }
+}
+
+table{
+    border: 1px solid var(--accent-blue);
+    width: 100%;
+
+    thead{
+        background-color: var(--accent-blue);
+        color: white;
+
+        th{
+            padding-left: var(--distance-x-small);
+            text-align: start;
+
+            &:nth-of-type(3){
+                width: 70px;
+            }
+
+            &:nth-of-type(4){
+                width: 30px;
+                color: var(--accent-blue);
+            }
+        }
+    }
+
+    td {
+        &:nth-child(3){
+            text-align: end;
+        }
+        &:last-child {
+            text-align: center;
+        }
+    }
+
+    .delete_btn{
+        background-color: transparent;
+        border: none;
+        place-self: center;
+
+        .delete_icon{
+            width: 20px;
+        }
+    }
+}
+
+footer{
+    font-size: small;
+    text-align: center;
+    border-top: 1px solid black;
+    padding-top: var(--distance-small);
+    margin-top: var(--distance-small);
+}
+
+

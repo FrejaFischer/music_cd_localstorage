@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js" defer></script>
+    <title>Music CD's | Assignment </title>
+</head>
+<body>
+    <header>
+            <h1>Music CDs</h1>
+    </header>
+    <main>
+        <section>
+            <form id="form">
+                <div class="input_container">
+                    <label for="author">Author</label>
+                    <input type="text" name="author" id="author" required>
+                </div>
+                <div class="input_container">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" id="title" required>
+                </div>
+                <div class="input_container">
+                    <label for="year">Year</label>
+                    <input type="text" name="year" id="year" pattern="\d{4}" maxlength="4" minlength="4" required>
+                </div>
+                <button type="submit">Add</button>
+            </form>
+        </section>
+        <section class="table_container">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Author</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>Webdev - User Experience</p>
+        <p><a target="_blank" href="https://icons8.com/icon/68064/trash">Trash</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+    </footer>
+</body>
+</html>
